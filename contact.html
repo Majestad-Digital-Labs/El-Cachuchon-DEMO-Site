@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" data-page="contact">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EL CACHUCHON — Contact</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Intro / loading poster (shown once per browser session) -->
+  <div id="intro" class="intro" aria-label="Loading">
+    <div class="intro__frame" aria-hidden="true"></div>
+    <div class="intro__hint">Tap anywhere to skip</div>
+  </div>
+
+  <main class="page">
+    <section class="poster" aria-label="El Cachuchon poster background">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="Home">
+          <img src="assets/img/logo.png" alt="El Cachuchon logo" />
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Primary">
+          <a href="index.html" data-nav="home">Home</a>
+          <a href="hats.html" data-nav="hats">Hats</a>
+          <a href="wholesale.html" data-nav="wholesale">Wholesale</a>
+          <a href="contact.html" data-nav="contact">Contact</a>
+        </nav>
+
+        <button class="menuBtn" id="menuBtn" aria-label="Menu">Menu</button>
+      </header>
+
+      <section class="stage" aria-label="Contact and Newsletter">
+        <h1>Contact</h1>
+        <p class="lead">Orders, custom requests, wholesale quotes, or quick questions — send a message and we’ll get you taken care of.</p>
+
+        <div class="grid2">
+          <div class="card">
+            <h2>Place an Order</h2>
+            <p class="muted">Tell us the letter/logo, hat style, thread color, quantity, and when you need it.</p>
+            <ul class="bullets">
+              <li>Custom letters, numbers, crowns, and symbols</li>
+              <li>Premium embroidery and clean “buchón” look</li>
+              <li>Fast replies for pricing + timeline</li>
+            </ul>
+
+            <form class="form" id="orderForm" novalidate>
+              <label>
+                Name
+                <input name="name" autocomplete="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="5" placeholder="What cap do you want?" required></textarea>
+              </label>
+              <button class="btn-gold" type="submit">Send</button>
+              <div class="formMsg" id="orderMsg" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <div class="card whiteCard">
+            <h2>Coupons & News</h2>
+            <p class="muted">Sign up for drops, coupon codes, and VIP updates. No spam — just the good stuff.</p>
+
+            <div class="postcardDeck" aria-label="Promo postcards">
+              <figure class="postcard postcard--hero">
+                <img src="assets/img/postcards/happy-friends.png" alt="El Cachuchon lifestyle promo" />
+                <figcaption>Weekend vibes — premium caps, real style.</figcaption>
+              </figure>
+
+              <div class="postcardRow">
+                <figure class="postcard">
+                  <img src="assets/img/postcards/workers.png" alt="Hard work behind the brand" />
+                  <figcaption>Built with hard work.</figcaption>
+                </figure>
+                <figure class="postcard">
+                  <img src="assets/img/postcards/fancy-delivery.png" alt="Luxury delivery moment" />
+                  <figcaption>Delivered with care.</figcaption>
+                </figure>
+                <figure class="postcard">
+                  <img src="assets/img/postcards/delivery-peek.png" alt="A peek at the showcase" />
+                  <figcaption>Showcase-ready.</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="miniNote">Tip: You can also ask for a custom wholesale bundle — we’ll quote you fast.</div>
+          </div>
+        </div>
+
+        <div class="centerRow" style="margin-top:14px;">
+          <a class="btn-ghost" href="wholesale.html">Wholesale</a>
+          <a class="btn-gold" href="hats.html">View Hats</a>
+        </div>
+      </section>
+
+      <div class="footerNote">© 2026 EL CACHUCHON® — Custom Embroidered Baseball Caps</div>
+    </section>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
